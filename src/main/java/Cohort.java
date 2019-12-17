@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Cohort {
 
-    private List<Student> students;
+    private static List<Student> students;
 
     public Cohort() {
         this.students = new ArrayList<>();
@@ -21,7 +21,7 @@ public class Cohort {
         students.add(student);
     }
 
-    public List<Student> getStudents() {
+    public static List<Student> getStudents() {
         return students;
     }
 }
